@@ -56,7 +56,12 @@ var coins = {
     unitScale: 8,
     displayScale: 5,
     displayCode: 'mBCH'
-  }
+  },
+  MOON: {
+    unitScale: 18,
+    displayScale: 15,
+    displayCode: 'mMOON'
+  },
 }
 
 var currentState
@@ -391,7 +396,7 @@ function setupCoinsButtons () {
 function setCryptoBuy (coin) {
   const cashIn = $('.cash-in')
   const translatedCoin = locale.translate(coin.display).fetch()
-  const buyStr = locale.translate('Buy<br/>%s').fetch(translatedCoin)
+  const buyStr = locale.translate('Deposit<br/>%s').fetch(translatedCoin)
 
   cashIn.html(buyStr)
 }
@@ -399,7 +404,7 @@ function setCryptoBuy (coin) {
 function setCryptoSell (coin) {
   const cashOut = $('.cash-out')
   const translatedCoin = locale.translate(coin.display).fetch()
-  const sellStr = locale.translate('Sell<br/>%s').fetch(translatedCoin)
+  const sellStr = locale.translate('Withdraw<br/>%s').fetch(translatedCoin)
 
   cashOut.html(sellStr)
 }
@@ -1414,6 +1419,10 @@ function translateCoin (cryptoCode) {
   if (cryptoCode === 'ETH') {
     $('.js-i18n-authorizing-note').html(locale.translate('This should take <strong>15 seconds</strong> on average.<br/>Occasionally, it will take over a minute.').fetch(cryptoCode))
   }
+
+  if (cryptoCode === 'MOON') {
+    $('.js-i18n-authorizing-note').html(locale.translate('This should take <strong>15 seconds</strong> on average.<br/>Occasionally, it will take over a minute.').fetch(cryptoCode))
+  }
 }
 
 function initTranslatePage () {
@@ -1604,7 +1613,8 @@ function initDebug () {
       return chooseCoin([
         {display: 'Bitcoin', cryptoCode: 'BTC'},
         {display: 'Ethereum', cryptoCode: 'ETH'},
-        {display: 'ZCash', cryptoCode: 'ZEC'}
+        {display: 'ZCash', cryptoCode: 'ZEC'},
+        {display: 'CAD', cryptoCode: 'MOON'}
       ], true)
     }
 

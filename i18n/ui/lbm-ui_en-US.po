@@ -751,12 +751,12 @@ msgid "Connected. Waiting for ticker."
 msgstr "Connected. Waiting for ticker."
 
 #: On screen: dynamic
-msgid "Buy<br/>%s"
-msgstr "Buy<br/>%s"
+msgid "Deposit<br/>%s"
+msgstr "Deposit<br/>%s"
 
 #: On screen: dynamic
-msgid "Sell<br/>%s"
-msgstr "Sell<br/>%s"
+msgid "Withdraw<br/>%s"
+msgstr "Withdraw<br/>%s"
 
 #: On screen: dynamic
 msgid "Lamassu Cryptomat"
@@ -861,6 +861,14 @@ msgstr "Bitcoin"
 #: On screen: coins
 msgid "Ethereum"
 msgstr "Ethereum"
+
+#: On screen: coins
+msgid "CAD"
+msgstr "CAD"
+
+#: On screen: coins
+msgid "CAD"
+msgstr "CAD"
 
 #: On screen: coins
 msgid "Zcash"

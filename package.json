@@ -72,6 +72,7 @@
     "url": "git@github.com:lamassu/lamassu-machine.git"
   },
   "scripts": {
+    "reset": "rm -rf ./data/client.key ./data/client.pem ./data/connection_info.json ./data/operator-info.json ./data/tx-db ./data/log",
     "test": "ava test",
     "build": "npm run build:html && npm run build:js-test && npm run build:js && npm run build:sass && npm run build:autoprefix",
     "build:html": "node ./ui/scripts/inline-html.js",

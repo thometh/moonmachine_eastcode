@@ -6,6 +6,7 @@ function cryptoUrl (cryptoCode, address, amount) {
   switch (cryptoCode) {
     case 'BTC': return 'bitcoin:' + address + '?amount=' + amount
     case 'ETH': return 'iban:' + ICAP.fromAddress(address, false, true) + '?amount=' + amount
+    case 'MOON': return 'iban:' + ICAP.fromAddress(address, false, true) + '?amount=' + amount
   }
 }
 
