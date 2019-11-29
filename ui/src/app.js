@@ -56,6 +56,11 @@ var coins = {
     unitScale: 8,
     displayScale: 5,
     displayCode: 'mBCH'
+  },
+  MOON: {
+    unitScale: 18,
+    displayScale: 15,
+    displayCode: 'mMOON'
   }
 }
 
@@ -1395,6 +1400,8 @@ function translateCoin (cryptoCode) {
 
   if (cryptoCode === 'ETH') {
     $('.js-i18n-authorizing-note').html(locale.translate('This should take <strong>15 seconds</strong> on average.<br/>Occasionally, it will take over a minute.').fetch(cryptoCode))
+  } else if (cryptoCode === 'MOON') {
+    $('.js-i18n-authorizing-note').html(locale.translate('This should take <strong>15 seconds</strong> on average.<br/>Occasionally, it will take over a minute.').fetch(cryptoCode))
   }
 }
 
@@ -1582,7 +1589,8 @@ function initDebug () {
       return chooseCoin([
         {display: 'Bitcoin', cryptoCode: 'BTC'},
         {display: 'Ethereum', cryptoCode: 'ETH'},
-        {display: 'ZCash', cryptoCode: 'ZEC'}
+        {display: 'ZCash', cryptoCode: 'ZEC'},
+        {display: 'CAD', cryptoCode: 'MOON'},
       ], true)
     }
 
