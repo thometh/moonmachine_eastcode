@@ -699,12 +699,12 @@ msgid "Connected. Waiting for ticker."
 msgstr "Connected. Waiting for ticker."
 
 #: On screen: dynamic
-msgid "Buy<br/>%s"
-msgstr "Buy<br/>%s"
+msgid "Deposite<br/>%s"
+msgstr "Deposite<br/>%s"
 
 #: On screen: dynamic
-msgid "Sell<br/>%s"
-msgstr "Sell<br/>%s"
+msgid "Withdraw<br/>%s"
+msgstr "Withdraw<br/>%s"
 
 #: On screen: dynamic
 msgid "Lamassu Cryptomat"

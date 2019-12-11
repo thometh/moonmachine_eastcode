@@ -376,7 +376,7 @@ function setupCoinsButtons() {
 function setCryptoBuy(coin) {
   var cashIn = $('.cash-in');
   var translatedCoin = locale.translate(coin.display).fetch();
-  var buyStr = locale.translate('Buy<br/>%s').fetch(translatedCoin);
+  var buyStr = locale.translate('Deposite<br/>%s').fetch(translatedCoin);
 
   cashIn.html(buyStr);
 }
@@ -384,7 +384,7 @@ function setCryptoBuy(coin) {
 function setCryptoSell(coin) {
   var cashOut = $('.cash-out');
   var translatedCoin = locale.translate(coin.display).fetch();
-  var sellStr = locale.translate('Sell<br/>%s').fetch(translatedCoin);
+  var sellStr = locale.translate('Withdraw<br/>%s').fetch(translatedCoin);
 
   cashOut.html(sellStr);
 }
